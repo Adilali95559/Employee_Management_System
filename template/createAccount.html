@@ -1,0 +1,26 @@
+{%extends 'base.html' %}
+
+{% block tittle %}register page {% endblock tittle %} 
+
+{% block body %} 
+
+  
+<div class="container" style="width:fit-content">
+<div class="container my-4">
+    <h3 class="my-4">Register</h3>
+  <form  method="post" action="">
+    <table class="table.table-bordered">
+      {% csrf_token %}
+      {{form.as_table}}
+      <tr>
+      <td colspan="2"><input type="submit" class="btn btn-lg btn-primary" /></td>
+    </tr>
+      
+    </table>
+  </form>
+</div>
+
+</div>
+
+
+{% endblock body %} 
